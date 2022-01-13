@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/4a852e3f97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="right">
+
+        <div class="city">
+            <select name="cars" id="cars">
+                <optgroup label="شهرهای پر بازدید">
+                    <option>تهران</option>
+                    <option>اصفهان</option>
+                    <option>کرج</option>
+                    <option>شیراز</option>
+                    <option>شیراز</option>
+                </optgroup>
+                <optgroup label="همه ی شهرها">
+                    <option >آبادان</option>
+                    <option >آباده</option>
+                    <option >آستارا</option>
+                    <option >اراک</option>
+                    <option >اردبیل</option>
+                    <option >ارومیه</option>
+                    <option >ازنا</option>
+                </optgroup>
+            </select>
+
+        </div>
+        <a href="divar.html"><div class="logo"></div></a>
+    </div>
+    <div class="left">
+        <ul>
+            <li><a href="my-divar.html">دیوار من</a></li>
+            <li><a href="aboutus.html">درباره ما</a></li>
+
+            <li><a href="support.html">پشتیبانی و قوانین</a></li>
+            <li><a href="contactus.html">تماس با ما</a></li>
+            <li><a href="">ثبت آگهی رایگان</a></li>
+
+        </ul>
+
+    </div>
+    <div class="smallmenu"><i class="fas fa-bars"></i></div>
+
+</header>
+
+<h1>مرکز پشتیبانی دیوار</h1>
+<div class="supportsearch">
+    <div class="wrapper">
+        <i class="fa fa-search" aria-hidden="true"></i>
+
+        <input id="searchinput" type="text">
+
+    </div>
+
+</div>
+
+<div class="quest">
+    <div class="wrapper">
+        <div class="r">
+            <ul>
+                <h3>سوالات</h3>
+                <li> راهنمای خرید امن</li>
+                <li>برای من ایجاد مزاحمت شده است</li>
+                <li>سوال اول</li>
+                <li>سوال اول</li>
+            </ul>
+        </div>
+        <div class="l">
+            <div class="txt">
+                <h2> 1عنوان جواب</h2>
+                <p>متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب
+                    متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن
+                    جواب </p>
+            </div>
+            <div class="txt">
+                <h2>عنوان جواب</h2>
+                <p>متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب
+                    متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن
+                    جواب </p>
+            </div>
+            <div class="txt">
+                <h2>عنوان جواب</h2>
+                <p>متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب
+                    متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن
+                    جواب </p>
+            </div>
+            <div class="txt">
+                <h2>عنوان جواب</h2>
+                <p>متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب
+                    متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن جواب متن
+                    جواب </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let q = Array.from(document.querySelectorAll('.quest .wrapper .r li'));
+    let answer = Array.from(document.querySelectorAll('.quest .wrapper .l .txt'));
+
+    q.forEach(arg => {
+        arg.addEventListener('click', function () {
+            answer.forEach(arg=>{arg.style.display='none'});
+            let i = q.indexOf(arg);
+
+            answer[i].style.display = 'block';
+        })
+    })
+</script>
+</body>
+</html>
